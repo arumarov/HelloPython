@@ -9,6 +9,6 @@ def create_list(n):
         res = res*(-3) 
         a.append(res) 
     print(a)
-print(create_list(6))
+create_list(6)
 
 
