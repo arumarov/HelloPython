@@ -9,4 +9,21 @@ def fibonacci(k):
         else: fibo.append(fibo[i-1] + fibo[i-2])
     return fibo
 
-print(fibonacci(10))
+print(fibonacci(8))
+
+# НегоФибоначчи
+def fibonacci(k):
+    fibo = []
+    for i in range(0, k):
+        if i <= 1: fibo.append(1)
+        else: fibo.append(fibo[i-1] + fibo[i-2])
+
+    fibo1 = []
+    for i in range(0,k*2+1):
+        if i < k and i%2 == 0: fibo1.append(fibo[k-1-i]*-1)
+        elif i < k and i%2 != 0: fibo1.append(fibo[k-1-i])
+        elif i == k: fibo1.append(0)
+        elif i > k: fibo1.append(fibo[i-k-1])
+    return fibo1
+
+print(fibonacci(8))
