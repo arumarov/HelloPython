@@ -20,7 +20,3 @@ def find_roots(a,b,c):
 
 a, b, c = 121, 169, 22
 print(find_roots(a, b, c))
-
-
-
-
