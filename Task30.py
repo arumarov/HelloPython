@@ -5,12 +5,13 @@ def pi(d):
     import decimal
     b = decimal.Decimal(str(d))
     x = (b.as_tuple().exponent*-1)
-    print(x)
-    a, i = 4, 1
-    for i in range (0,10):
-        b, p = 3, 0
-        p = p + a/(i+1*i+2*i+3) - a/(i+3*i+4*i+5)
+    a = 4
+    p, l = 0, 0
+    for i in range (0,500):
+        b = 3
+        p = p + a/(l+2*l+3*l+4) - a/(l+4*l+5*l+6)
+        l = l + 4
     pi = p + b
     return round(pi, x)
 
-print(pi(0.00000000000000000000000001))
+print(pi(0.000000001))
