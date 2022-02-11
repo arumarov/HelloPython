@@ -8,6 +8,6 @@ def create_list(n):
     for j in range(1, n):
         sum = sum + a[j]
     return sum
-print(create_list(6))
+print(round(create_list(6)))
 
 
